@@ -1,8 +1,5 @@
 import {Component, HostListener, Input, OnInit} from "@angular/core";
-export class Pair {
-    word: string;
-    translation: string;
-}
+import {Pair} from "../_entities/pair";
 
 @Component({
     selector: 'pairs-spinner',

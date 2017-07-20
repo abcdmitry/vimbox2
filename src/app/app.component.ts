@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Pair} from "./pairs-spinner.component";
+import {Pair} from "../_entities/pair";
 
 @Component({
   selector: 'app-root',
