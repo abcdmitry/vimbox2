@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Pair} from "./pairs-spinner.component";
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+      <div>
+          <pairs-spinner [pairs]="pairs"></pairs-spinner>
+      </div>
+  `
 })
 export class AppComponent {
-  title = 'app works!';
+  pairs: Pair[] = [
+    {word: "apple", translation: "яблоко"},
+    {word: "onomatopoeia", translation: "звукоподражание"}
+  ];
 }
